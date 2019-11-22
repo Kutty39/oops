@@ -1,0 +1,33 @@
+{
+	"pulses": [
+		{
+			"itemName": "tamil",
+			"itemweight": 60.0,
+			"itemPricePerKg": 250.0
+		},
+		{
+			"itemName": "fortunr",
+			"itemweight": 30.0,
+			"itemPricePerKg": 50.0
+		}
+	],
+	"wheat": [
+		{
+			"itemName": "ashirvad",
+			"itemweight": 40.0,
+			"itemPricePerKg": 200.0
+		}
+	],
+	"Rice": [
+		{
+			"itemName": "basmathi",
+			"itemweight": 50.0,
+			"itemPricePerKg": 150.0
+		},
+		{
+			"itemName": "masoora",
+			"itemweight": 30.0,
+			"itemPricePerKg": 100.0
+		}
+	]
+}
