@@ -61,12 +61,12 @@ public class InventoryMain {
 					break;
 				case 2:
 					System.out.println("calculation for wheat ");
-					System.out.println(inv.readInventory("Pulses"));
+					System.out.println(inv.readInventory("wheat"));
 
 					break;
 				case 3:
 					System.out.println("calculation for pulses ");
-					System.out.println(inv.readInventory("wheat"));
+					System.out.println(inv.readInventory("pulses"));
 
 					break;
 				case 4:

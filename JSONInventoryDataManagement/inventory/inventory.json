@@ -16,6 +16,11 @@
 			"itemName": "ashirvad",
 			"itemweight": 40.0,
 			"itemPricePerKg": 200.0
+		},
+		{
+			"itemName": "shakthi",
+			"itemweight": 76.0,
+			"itemPricePerKg": 140.0
 		}
 	],
 	"Rice": [
