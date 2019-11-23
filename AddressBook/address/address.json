@@ -1,0 +1,22 @@
+{
+	"doreman": [
+		{
+			"lName": "nobita",
+			"zipCode": 21545,
+			"fName": "doreman",
+			"city": "fun",
+			"phoneNum": 872135721,
+			"state": "funny"
+		}
+	],
+	"pokyman": [
+		{
+			"lName": "kachu",
+			"zipCode": 5621345,
+			"fName": "pokyman",
+			"city": "joo",
+			"phoneNum": 56758716,
+			"state": "jurasik"
+		}
+	]
+}
