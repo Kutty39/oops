@@ -1,33 +1,39 @@
-package com.blbz.addressbook.model;
+package src.com.blbz.addressbook.model;
+/*
+ * purpose : created class for person details
+ */
+public class Person {
+	private String fName;
+	private String lName;
+	private long phonNo;
 
-public class Person 
-{
-	 private String fName;
-	 private String lName;
-	 private long phoneNum;
-	 
 	public String getfName() {
 		return fName;
 	}
+
 	public void setfName(String fName) {
 		this.fName = fName;
 	}
+
 	public String getlName() {
 		return lName;
 	}
+
 	public void setlName(String lName) {
 		this.lName = lName;
 	}
-	public long getPhoneNum() {
-		return phoneNum;
+
+	public long getPhonNo() {
+		return phonNo;
 	}
-	public void setPhoneNum(long phoneNum) {
-		this.phoneNum = phoneNum;
+
+	public void setPhonNo(long phonNo) {
+		this.phonNo = phonNo;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Person [fName=" + fName + ", lName=" + lName + ", phoneNum=" + phoneNum + "]";
+		return "Person [fName=" + fName + ", lName=" + lName + ", phonNo=" + phonNo + "]";
 	}
-	 
+
 }

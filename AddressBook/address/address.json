@@ -1,1 +1,32 @@
-{"doreman":[{"lName":"nobita","zipCode":768290,"fName":"doreman","phonNo":872356098,"city":"disney","state":"america"}],"tom":[{"lName":"gerr","zipCode":56784,"fName":"tom","phonNo":78693424,"city":"cartoon","state":"disneyworls"}],"pokyman":[{"lName":"pikach","zipCode":283756,"fName":"pokyman","phonNo":846189463,"city":"funny","state":"pogo"}]}
+{
+	"tom": [
+		{
+			"lName": "jerry",
+			"zipCode": 234652,
+			"fName": "tom",
+			"phonNo": 54745817,
+			"city": "funny",
+			"state": "disney"
+		}
+	],
+	"doreman": [
+		{
+			"lName": "nobita",
+			"zipCode": 651431,
+			"fName": "doreman",
+			"phonNo": 572523876,
+			"city": "devil",
+			"state": "dntknow"
+		}
+	],
+	"pokyman": [
+		{
+			"lName": "pikachu",
+			"zipCode": 51253,
+			"fName": "pokyman",
+			"phonNo": 7657235378,
+			"city": "doraa",
+			"state": "zurasik"
+		}
+	]
+}

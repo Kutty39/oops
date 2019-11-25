@@ -1,5 +1,7 @@
-package com.blbz.addressbook.utilrepositry;
-
+package src.com.blbz.addressbook.utilrepositry;
+/*
+ * purpose : to read all type of  inputs from user
+ */
 import java.util.Scanner;
 
 public class Utility 

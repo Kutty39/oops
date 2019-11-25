@@ -1,5 +1,8 @@
-package com.blbz.addressbook.model;
+package src.com.blbz.addressbook.model;
 
+/*
+ * purpose : created class for address details
+ */
 public class AddressBook 
 {
 private String city;
@@ -28,7 +31,5 @@ public void setZipCode(int zipCode) {
 public String toString() {
 	return "AddressBook [city=" + city + ", state=" + state + ", zipCode=" + zipCode + "]";
 }
-
-
  
 }
