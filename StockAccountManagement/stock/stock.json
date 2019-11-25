@@ -1,0 +1,17 @@
+{
+	"Stock Management": [
+		
+		{
+			"noOfShares": 6,
+			"stockName": "capgemini",
+			"sharePrice": 1700.0,
+			"Total": 10200.0
+		},
+		{
+			"noOfShares": 30,
+			"stockName": "facebook",
+			"sharePrice": 400.0,
+			"Total": 12000.0
+		}
+	]
+}
