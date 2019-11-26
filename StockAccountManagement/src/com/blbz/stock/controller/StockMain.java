@@ -15,6 +15,7 @@ public class StockMain {
 	public static void main(String[] args) {
          int choice = 0;
          while(choice != 3) {
+        System.out.println("\n");
         System.out.println("************************************************");	 
 		System.out.println("choose the choice...");
 		System.out.println("-----------------------");
@@ -31,6 +32,7 @@ public class StockMain {
 			break;
 		case 2:
 			System.out.println("****stock report****");
+			ss.stockReport();
 			break;
 		case 3:
 		     System.out.println("successfully done with the every thing..");
