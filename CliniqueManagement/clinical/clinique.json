@@ -1,0 +1,28 @@
+{
+	"Book Appointment": [
+		{
+			"availableTime": "2Pm to 3Pm",
+			"Patient Id": [
+				"1"
+			],
+			"Doctor Id": "Dr33",
+			"Date": "26th nov"
+		}
+	],
+	"Doctors Details": [
+		{
+			"doctorName": "shivani",
+			"available Timings": "3Pm to 8Pm",
+			"sepcialization": "Ent",
+			"Doctor Id": "Dr11"
+		}
+	],
+	"Patient Details": [
+		{
+			"patient Name": "mental",
+			"Patient Id": "PA02",
+			"Patient Age": "40y",
+			"Patient Mobile No": "896765324"
+		}
+	]
+}
