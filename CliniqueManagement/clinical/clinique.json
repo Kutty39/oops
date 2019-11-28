@@ -3,18 +3,44 @@
 		{
 			"availableTime": "2Pm to 3Pm",
 			"Patient Id": [
-				"1"
+				"PA03",
+				"PA02",
+				"PA06",
+				"PA09",
+				"PA07"
 			],
 			"Doctor Id": "Dr33",
-			"Date": "26th nov"
+			"Date": "26\/11\/2019"
+		},
+		{
+			"availableTime": "12Pm to 3Pm",
+			"Patient Id": [
+				"PA17",
+				"PA24",
+				"PA22"
+			],
+			"Doctor Id": "Dr23",
+			"Date": "27\/11\/2019"
 		}
 	],
 	"Doctors Details": [
 		{
-			"doctorName": "shivani",
-			"available Timings": "3Pm to 8Pm",
-			"sepcialization": "Ent",
-			"Doctor Id": "Dr11"
+			"doctorName": "Dr.hasini",
+			"available Timings": "3Pm to 6Pm",
+			"sepcialization": "brain",
+			"Doctor Id": "Dr33"
+		},
+		{
+			"doctorName": "Dr.swarajyam",
+			"available Timings": "12Pm to 3Pm",
+			"sepcialization": "heart",
+			"Doctor Id": "Dr23"
+		},
+		{
+			"doctorName": "Dr.samaram",
+			"available Timings": "10Am to 5Pm",
+			"sepcialization": "bones",
+			"Doctor Id": "Dr44"
 		}
 	],
 	"Patient Details": [
@@ -23,6 +49,54 @@
 			"Patient Id": "PA02",
 			"Patient Age": "40y",
 			"Patient Mobile No": "896765324"
+		},
+		{
+			"patient Name": "kavya",
+			"Patient Id": "PA03",
+			"Patient Age": "89",
+			"Patient Mobile No": 9988776655
+		},
+		{
+			"patient Name": "loose",
+			"Patient Id": "PA06",
+			"Patient Age": "23y",
+			"Patient Mobile No": 9878234572
+		},
+		{
+			"patient Name": "known",
+			"Patient Id": "PA09",
+			"Patient Age": "45y",
+			"Patient Mobile No": 987657345
+		},
+		{
+			"patient Name": "nice",
+			"Patient Id": "PA07",
+			"Patient Age": "67y",
+			"Patient Mobile No": 983652345
+		},
+		{
+			"patient Name": "machi",
+			"Patient Id": "PA09",
+			"Patient Age": "90",
+			"Patient Mobile No": 9879657864
+		},
+		{
+			"patient Name": "mastiii",
+			"Patient Id": "PA17",
+			"Patient Age": "11y",
+			"Patient Mobile No": 9783478563
+		},
+		{
+			"patient Name": "good",
+			"Patient Id": "PA24",
+			"Patient Age": "76y",
+			"Patient Mobile No": 987853453
+		},
+		{
+			"patient Name": "amit",
+			"Patient Id": "PA22",
+			"Patient Age": "76y",
+			"Patient Mobile No": 9889781678
 		}
 	]
 }

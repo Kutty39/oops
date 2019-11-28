@@ -11,7 +11,7 @@ void addDoctorDetails(String details);
 void addPatientDetails(String details);
 void  showingDoctorDetails();
 boolean searchDetails(String Id, String pId,String temp2);
-public JSONObject searchDetailsandget(String Id, String temp,String temp2);
-JSONArray getArray( String temp);
+public JSONObject searchDetailsandget(String Id, String temp,String temp2,JSONObject jsonbj);
+
 
 }

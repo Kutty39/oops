@@ -22,7 +22,7 @@ public class CliniqueServImpl implements CliniqueServ {
 	public void writeDetails(String details, String dId, String doctorName, String specialization,
 			String availableTime) {
 		JSONParser parser = new JSONParser();
-		try(BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
 			Object obj = parser.parse(br);
 			JSONObject jobj = (JSONObject) obj;
 			JSONArray arr = (JSONArray) jobj.get(details);
@@ -46,7 +46,7 @@ public class CliniqueServImpl implements CliniqueServ {
 	@SuppressWarnings("unchecked")
 	public void writePatientDetails(String details, String pId, String pName, long mobNo, String age) {
 		JSONParser parser = new JSONParser();
-		try(BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
 			Object obj = parser.parse(br);
 			JSONObject jobj = (JSONObject) obj;
 			JSONArray arr1 = (JSONArray) jobj.get(details);
@@ -159,44 +159,21 @@ public class CliniqueServImpl implements CliniqueServ {
 		return false;
 	}
 
-	public JSONObject searchDetailsandget(String Id, String temp, String temp2) {
-		JSONParser parser = new JSONParser();
-		try (BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
-			Object obj = parser.parse(br);
-			JSONObject jsonbj = (JSONObject) obj;
-			JSONArray array = (JSONArray) jsonbj.get(temp);
-			if (array != null) {
-				Iterator it = array.iterator();
-				while (it.hasNext()) {
-					JSONObject newobj = (JSONObject) it.next();
-					if (newobj.get(temp2).equals(Id)) {
-						return newobj;
-					}
+	public JSONObject searchDetailsandget(String Id, String temp, String temp2, JSONObject jsonbj) {
+		JSONArray array = (JSONArray) jsonbj.get(temp);
+		if (array != null) {
+			Iterator it = array.iterator();
+			while (it.hasNext()) {
+				JSONObject newobj = (JSONObject) it.next();
+				if (newobj.get(temp2).equals(Id)) {
+					return newobj;
 				}
-			} else {
-				return null;
 			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(e);
+		} else {
+			return null;
 		}
 		return null;
-	}
 
-	public JSONArray getArray(String temp) {
-		JSONParser parser = new JSONParser();
-		try (BufferedReader br = new BufferedReader(new FileReader("clinical/clinique.json"))) {
-			Object obj = parser.parse(br);
-			JSONObject jsonbj = (JSONObject) obj;
-			JSONArray array = (JSONArray) jsonbj.get(temp);
-			return array;
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(e);
-		}
-		return null;
 	}
 
 }
