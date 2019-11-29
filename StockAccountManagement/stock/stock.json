@@ -1,1 +1,18 @@
-{"Stock Management":[{"noOfShares":6,"stockName":"capgemini","sharePrice":1700.0,"Total":10200.0},{"noOfShares":30,"stockName":"facebook","sharePrice":400.0,"Total":12000.0},{"noOfShares":50,"stockName":"Maxstore","sharePrice":4000.0,"Total":200000.0},{"noOfShares":30,"stockName":"diamonds","sharePrice":60000.0,"Total":1800000.0},{"noOfShares":30,"stockName":"kalamandir","sharePrice":2000.0,"Total":60000.0},{"noOfShares":300,"stockName":"chickenda","sharePrice":400.0,"Total":120000.0},{"noOfShares":20,"stockName":"crackers","sharePrice":3000.0,"Total":60000.0},{"noOfShares":20,"stockName":"sonataa","sharePrice":1000.0,"Total":20000.0},{"noOfShares":30,"stockName":"tatacmpny","sharePrice":1000.0,"Total":30000.0}]}
+{
+	"Stock Management": [
+		{
+			"No Of Shares": 23,
+			"Share Price": 2000.0,
+			"Total Amount": 46000.0,
+			"Stock Name": "capgemini",
+			"Stock Symbol": "1"
+		},
+		{
+			"No Of Shares": 22,
+			"Share Price": 1000.0,
+			"Total Amount": 22000.0,
+			"Stock Name": "facebook",
+			"Stock Symbol": "1-1"
+		}
+	]
+}

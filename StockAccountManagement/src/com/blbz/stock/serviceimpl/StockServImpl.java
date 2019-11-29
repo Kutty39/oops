@@ -16,7 +16,8 @@ import com.blbz.stock.utilRepo.Util;
 public class StockServImpl implements StockService {
 	Util utility = new Util();
 
-	public void writeStockDetails(String stockName, int noOfShares, double sharePrice) {
+	@SuppressWarnings("unchecked")
+	public void writeStockDetails(String stockName, int noOfShares, double sharePrice, String stockSymbol) {
 		JSONParser parser = new JSONParser();
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("stock/stock.json"));
@@ -24,10 +25,11 @@ public class StockServImpl implements StockService {
 			JSONObject jobj = (JSONObject) obj;
 			JSONArray arr = (JSONArray) jobj.get("Stock Management");
 			JSONObject jsobj = new JSONObject();
-			jsobj.put("stockName", stockName);
-			jsobj.put("noOfShares", noOfShares);
-			jsobj.put("sharePrice", sharePrice);
-			jsobj.put("Total", noOfShares * sharePrice);
+			jsobj.put("Stock Name", stockName);
+			jsobj.put("Stock Symbol", stockSymbol);
+			jsobj.put("No Of Shares", noOfShares);
+			jsobj.put("Share Price", sharePrice);
+			jsobj.put("Total Amount", noOfShares * sharePrice);
 			arr.add(jsobj);
 			FileWriter fw = new FileWriter("stock/stock.json");
 			fw.write(jobj.toJSONString());
@@ -39,45 +41,49 @@ public class StockServImpl implements StockService {
 		}
 	}
 
+	@SuppressWarnings("static-access")
 	public void addStockDetails() {
 		StockDetails sd = new StockDetails();
 		System.out.println("enter the stock name->");
 		sd.setStockName(utility.stringInput());
-
+        
+		System.out.println("enter the stock symbol->");
+		sd.setStockSymbol(utility.stringInput());
 		System.out.println("enter the noOfShares->");
 		sd.setNoOfShares(utility.integerInput());
 
 		System.out.println("enter the share price->");
 		sd.setSharePrice(utility.doublInput());
-		writeStockDetails(sd.getStockName(), sd.getNoOfShares(), sd.getSharePrice());
+		writeStockDetails(sd.getStockName(), sd.getNoOfShares(), sd.getSharePrice(),sd.getStockSymbol());
 	}
+
+	@SuppressWarnings("rawtypes")
 	public void stockReport() {
 		JSONParser parse = new JSONParser();
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("stock/stock.json"));
 			Object obj = parse.parse(br);
-			JSONObject jobj = (JSONObject)obj;
+			JSONObject jobj = (JSONObject) obj;
 			JSONArray arr = (JSONArray) jobj.get("Stock Management");
 			Iterator it = arr.iterator();
-		
-			System.out.println(" _________________________________________________________________");
-			System.out.println("|                                                                 | ");
-			System.out.println("|Stock Name \t  Stock Shares \t    Stock Price\t      Total value |   ");
-			System.out.println("|_________________________________________________________________|");
-			
-			while(it.hasNext())
-			{
-				
-				JSONObject jsonbj = (JSONObject)it.next();
+
+			System.out.println(" ________________________________________________________________________________");
+			System.out.println("|                                                                                | ");
+			System.out.println("|Stock Name \t Stock Symbol \t Stock Shares \t    Stock Price\t     Total Amount|   ");
+			System.out.println("|________________________________________________________________________________|");
+
+			while (it.hasNext()) {
+
+				JSONObject jsonbj = (JSONObject) it.next();
 				System.out.println();
-				System.out.print(" "+jsonbj.get("stockName").toString()+"\t\t");
-				System.out.print(jsonbj.get("noOfShares").toString()+"\t\t");
-				System.out.print(jsonbj.get("sharePrice").toString()+"\t\t");
-				System.out.print(jsonbj.get("Total").toString()+"\t\t");
-				
+				System.out.print(" " + jsonbj.get("Stock Name").toString() + "\t\t");
+				System.out.print(jsonbj.get("Stock Symbol").toString() +"\t\t");
+				System.out.print(jsonbj.get("No Of Shares").toString() + "\t\t");
+				System.out.print(jsonbj.get("Share Price").toString() + "\t\t");
+				System.out.print(jsonbj.get("Total Amount").toString() + "\t\t");
+
 			}
-		}catch(Exception e)
-		{
+		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e);
 		}

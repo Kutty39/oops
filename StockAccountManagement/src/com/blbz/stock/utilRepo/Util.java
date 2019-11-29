@@ -26,7 +26,19 @@ public class Util {
 		return temp;
 
 	}
+	public static long longInput() {
+		long temp = 0;
+		try {
 
+			temp = Long.parseLong(sc.nextLine());
+		} catch (Exception e) {
+			System.out.println("enter the matching value ");
+		}
+		return temp;
+
+	}
+
+	
 	public static double doublInput() {
 		double temp = 0;
 		try {

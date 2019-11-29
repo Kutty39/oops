@@ -5,11 +5,12 @@ import java.io.FileWriter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import com.blbz.stock.service.StockService;
 import com.blbz.stock.serviceimpl.StockServImpl;
 import com.blbz.stock.utilRepo.Util;
 
 public class StockMain {
-	static StockServImpl ss = new StockServImpl();
+	static StockService ss = new StockServImpl();
 	static Util utility = new Util();
 
 	public static void main(String[] args) {
