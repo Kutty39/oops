@@ -1,8 +1,26 @@
 {
-	"Transaction": [],
-	"Holdings": {
-		
-	},
-	"Initial Amount": 400000.0,
+	"Transaction": [
+		{
+			"Action": "Buy",
+			"Amount": 10000.0,
+			"Shares": 5,
+			"Stock Symbol": "1",
+			"Date & Time": "30-11-2019 At 03:14 PM"
+		},
+		{
+			"Action": "sell",
+			"Amount": 3000.0,
+			"Shares": 3,
+			"Stock Symbol": "1",
+			"Date & Time": "30-11-2019 At 07:33 PM"
+		}
+	],
+	"Holdings": [
+		{
+			"No Of Shares": 3,
+			"Stock Symbol": "1"
+		}
+	],
+	"Initial Amount": 378000.0,
 	"Accountant Name": "kavya"
 }

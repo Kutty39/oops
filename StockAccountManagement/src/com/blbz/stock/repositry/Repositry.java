@@ -12,19 +12,19 @@ import com.blbz.stock.model.StockDetails;
 public class Repositry 
 {
 	StockDetails sd = new StockDetails();
-	public JSONArray readJson() {
-		JSONArray arr = null;
+	public JSONObject readJson() {
+		JSONObject jobj1 = null;
+	
 		JSONParser parser = new JSONParser();
 		try {
 			BufferedReader br= new BufferedReader(new FileReader("stock/stock.json"));
-			Object obj = parser.parse(br);
-			JSONObject jobj = (JSONObject)obj;
-			arr = (JSONArray)jobj.get("Stock Management");
+			jobj1 = (JSONObject) parser.parse(br);
+		
 		}catch(Exception e)
 		{
 			e.printStackTrace();
 			System.out.println(e);
 		}
-		return arr;     
+		return jobj1;     
 	}
 }

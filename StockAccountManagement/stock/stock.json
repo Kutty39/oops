@@ -1,9 +1,9 @@
 {
 	"Stock Management": [
 		{
-			"No Of Shares": 23,
+			"No Of Shares": 13,
 			"Share Price": 2000.0,
-			"Total Amount": 46000.0,
+			"Total Amount": 26000.0,
 			"Stock Name": "capgemini",
 			"Stock Symbol": "1"
 		},

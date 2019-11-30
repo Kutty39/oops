@@ -8,6 +8,15 @@ public class StockDetails {
 	private double sharePrice;
 	private String stockSymbol;
 	private JSONObject jsonobj;
+    private String filename;
+
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
 
 	public JSONObject getJsonobj() {
 		return jsonobj;
